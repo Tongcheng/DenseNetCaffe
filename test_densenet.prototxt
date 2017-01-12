@@ -4,10 +4,10 @@ layer {
   top: "Data1"
   top: "Data2"
   transform_param {
-    mean_file: "/home/zl499/caffe/examples/cifar10/mean.binaryproto"
+    mean_file: "/home/tl486/git_TCcaffe/caffe2/caffe/examples/cifar10/mean.binaryproto"
   }
   data_param {
-    source: "/home/zl499/caffe/examples/cifar10/cifar10_test_lmdb"
+    source: "/home/tl486/git_TCcaffe/caffe2/caffe/examples/cifar10/cifar10_test_lmdb"
     batch_size: 50
     backend: LMDB
   }
