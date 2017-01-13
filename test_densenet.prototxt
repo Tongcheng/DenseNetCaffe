@@ -38,7 +38,7 @@ layer {
   bottom: "Convolution1"
   top: "DenseBlock1"
   denseblock_param {
-    numTransition: 15
+    numTransition: 12
     initChannel: 16
     growthRate: 12
     Filter_Filler {
@@ -100,7 +100,7 @@ layer {
   bottom: "BatchNorm1"
   top: "Convolution2"
   convolution_param {
-    num_output: 12
+    num_output: 160
     bias_term: false
     pad: 0
     kernel_size: 1
@@ -130,7 +130,7 @@ layer {
   bottom: "Pooling1"
   top: "DenseBlock2"
   denseblock_param {
-    numTransition: 15
+    numTransition: 12
     initChannel: 12
     growthRate: 12
     Filter_Filler {
@@ -192,7 +192,7 @@ layer {
   bottom: "BatchNorm2"
   top: "Convolution3"
   convolution_param {
-    num_output: 12
+    num_output: 204
     bias_term: false
     pad: 0
     kernel_size: 1
@@ -222,7 +222,7 @@ layer {
   bottom: "Pooling2"
   top: "DenseBlock3"
   denseblock_param {
-    numTransition: 15
+    numTransition: 12
     initChannel: 12
     growthRate: 12
     Filter_Filler {
@@ -284,7 +284,7 @@ layer {
   bottom: "BatchNorm3"
   top: "Convolution4"
   convolution_param {
-    num_output: 12
+    num_output: 348
     bias_term: false
     pad: 0
     kernel_size: 1
