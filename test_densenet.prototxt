@@ -32,7 +32,7 @@ layer {
     }
   }
 }
-layer{
+layer {
   name: "DenseBlock1"
   type: "DenseBlock"
   bottom: "Convolution1"
@@ -124,7 +124,7 @@ layer {
     stride: 2
   }
 }
-layer{
+layer {
   name: "DenseBlock2"
   type: "DenseBlock"
   bottom: "Pooling1"
@@ -216,7 +216,7 @@ layer {
     stride: 2
   }
 }
-layer{
+layer {
   name: "DenseBlock3"
   type: "DenseBlock"
   bottom: "Pooling2"
@@ -300,7 +300,7 @@ layer {
 layer {
   name: "Pooling3"
   type: "Pooling"
-  bottom: "DenseBlock3"
+  bottom: "Convolution4"
   top: "Pooling3"
   pooling_param {
     pool: AVE

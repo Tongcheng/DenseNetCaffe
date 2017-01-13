@@ -300,7 +300,7 @@ layer {
 layer {
   name: "Pooling3"
   type: "Pooling"
-  bottom: "DenseBlock3"
+  bottom: "Convolution4"
   top: "Pooling3"
   pooling_param {
     pool: AVE
