@@ -9,8 +9,8 @@ def bn_relu_conv(bottom, ks, nout, stride, pad, dropout):
     relu = L.ReLU(scale, in_place=True)
     conv = L.Convolution(relu, kernel_size=ks, stride=stride, 
                     num_output=nout, pad=pad, bias_term=False, weight_filler=dict(type='msra'), bias_filler=dict(type='constant'))
-    if dropout>0:
-        conv = L.Dropout(conv, dropout_ratio=dropout)
+    #if dropout>0:
+    #    conv = L.Dropout(conv, dropout_ratio=dropout)
     return conv
 
 def add_layer(bottom, num_filter, dropout):
