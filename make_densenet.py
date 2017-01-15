@@ -30,7 +30,7 @@ def transition(bottom, num_filter, dropout):
 #dropout -- set to 0 to disable dropout, non-zero number to set dropout rate
 def densenet(data_file, mode='train', batch_size=64, depth=40, first_output=16, growth_rate=12, dropout=0.2):
     data, label = L.Data(source=data_file, backend=P.Data.LMDB, batch_size=batch_size, ntop=2, 
-              transform_param=dict(mean_file="/home/zl499/caffe/examples/cifar10/mean.binaryproto"))
+              transform_param=dict(mean_file="/home/tl486/git_TCcaffe/caffe2/caffe/examples/cifar10/mean.binaryproto"))
 
     nchannels = first_output
     model = L.Convolution(data, kernel_size=3, stride=1, num_output=nchannels,
