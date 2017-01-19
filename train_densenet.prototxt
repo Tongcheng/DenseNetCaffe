@@ -131,7 +131,7 @@ layer {
   top: "DenseBlock2"
   denseblock_param {
     numTransition: 12
-    initChannel: 12
+    initChannel: 204
     growthRate: 12
     Filter_Filler {
       type: "gaussian"
@@ -223,7 +223,7 @@ layer {
   top: "DenseBlock3"
   denseblock_param {
     numTransition: 12
-    initChannel: 12
+    initChannel: 348
     growthRate: 12
     Filter_Filler {
       type: "gaussian"
