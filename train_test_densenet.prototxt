@@ -3,6 +3,26 @@ layer {
   type: "Data"
   top: "Data1"
   top: "Data2"
+  include {
+    phase: TRAIN
+  }
+  transform_param {
+    mean_file: "/home/tl486/git_TCcaffe/caffe2/caffe/examples/cifar10/mean.binaryproto"
+  }
+  data_param {
+    source: "/home/tl486/git_TCcaffe/caffe2/caffe/examples/cifar10/cifar10_train_lmdb"
+    batch_size: 64
+    backend: LMDB
+  }
+}
+layer {
+  name: "Data1"
+  type: "Data"
+  top: "Data1"
+  top: "Data2"
+  include {
+    phase: TEST
+  }
   transform_param {
     mean_file: "/home/tl486/git_TCcaffe/caffe2/caffe/examples/cifar10/mean.binaryproto"
   }
@@ -337,4 +357,5 @@ layer {
   bottom: "Data2"
   top: "Accuracy1"
 }
+
 

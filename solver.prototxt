@@ -1,5 +1,4 @@
-train_net: "train_densenet.prototxt"
-test_net: "test_densenet.prototxt"
+net: "train_test_densenet.prototxt"
 test_iter: 200
 test_interval: 800
 base_lr: 0.1
