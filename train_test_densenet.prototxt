@@ -27,7 +27,7 @@ layer {
     mean_file: "/home/tl486/git_TCcaffe/caffe2/caffe/examples/cifar10/mean.binaryproto"
   }
   data_param {
-    source: "/home/tl486/git_TCcaffe/caffe2/caffe/examples/cifar10/cifar10_test_lmdb"
+    source: "/home/tl486/git_TCcaffe/caffe2/caffe/examples/cifar10/cifar10_train_lmdb"
     batch_size: 50
     backend: LMDB
   }
